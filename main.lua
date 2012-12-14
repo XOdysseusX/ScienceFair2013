@@ -3,7 +3,7 @@ function love.load()
 	require "SECS"
 	require "Actor"
 	require "World"
-
+	require "Player"
 	world = World:new(50)
 	
 end

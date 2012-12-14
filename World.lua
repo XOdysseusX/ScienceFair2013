@@ -13,9 +13,8 @@ function World:init(meterSize)
 	self.actors = {
 		Actor:new(self.stage, 200, 20, 500, 10, 50, "dynamic"),
 		Actor:new(self.stage, 400, 500, 50, 50, 50, "static"),
-		Actor:new(self.stage, 50, 400, 50, 50, 10, "static"),
-	}
-	
+		}
+	self.player = Player:new(self.stage, 50, 400, 50, 50, 10, "dynamic"), 
 	self.actors[1]:setRestitution(0.3)
 
 end
@@ -23,6 +22,7 @@ end
 function World:update(dt)
 
 	self.stage:update(dt)
+	self.player:update(dt)
 
 end
 
@@ -33,5 +33,6 @@ function World:draw()
 		self.actors[i]:draw()
 	
 	end
+	self.player:draw()
 
 end

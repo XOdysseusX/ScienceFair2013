@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Player = class:new()
 
 function Player:init(world, x, y, w, h, mass, type)
@@ -48,7 +48,7 @@ function Player:setRestitution(restitution)
 
 	self.fixture:setRestitution(restitution)
 end
-=======
+
 Player = class:new()
 
 PART_TORSO = 1
@@ -155,4 +155,3 @@ function Player:setMass(mass)
 	self.mass = mass
 
 end
->>>>>>> Cleaned Player Class
